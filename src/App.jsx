@@ -1,12 +1,14 @@
 import React from "react";
+import { Hero } from "./components";
+import { heroapi } from "./data/data";
 
 const App = () => {
   return (
-    <div>
-      <h1 className="bg-black text-red-500 text-4xl font-bold">
-        Welcome to Nike Store Project
-      </h1>
-    </div>
+    <>
+      <main>
+        <Hero heroapi={heroapi}></Hero>
+      </main>
+    </>
   );
 };
 
