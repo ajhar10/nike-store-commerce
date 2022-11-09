@@ -7,7 +7,7 @@ const App = () => {
     <>
       <main className="flex flex-col gap-16 relative">
         <Hero heroapi={heroapi}></Hero>
-        <Sales endpoint={popularsales} />
+        <Sales endpoint={popularsales} ifExists />
         <Sales endpoint={toprateslaes} />
       </main>
     </>
