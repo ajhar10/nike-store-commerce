@@ -3,13 +3,11 @@ import Item from "./utils/Item";
 import Title from "./utils/Title";
 
 const Sales = ({ ifExists, endpoint: { title, items } }) => {
-  console.log(title);
   return (
     <>
-      <div>
-        <div>
-          <Title title={title} />
-        </div>
+      <div className="nike-container">
+        <Title title={title} />
+
         <div
           className={`items-center justify-items-center gap-7 lg:gap-5 mt-7 ${
             ifExists
